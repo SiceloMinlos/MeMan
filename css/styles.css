@@ -1,0 +1,12 @@
+body {
+    margin: 0;                  /*overidding the default 8px by chrome */
+    background-color: black;
+    padding: 10px 20px;
+}
+
+p {
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin-bottom: 6px;
+}
