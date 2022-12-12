@@ -17,8 +17,6 @@ class Boundary {
     }
 
     draw() {
-        // ctx.fillStyle = 'blue'
-        // ctx.fillRect(this.position.x, this.position.y, this.width, this.height)
         ctx.drawImage(this.image, this.position.x, this.position.y)
     }
 }
@@ -82,7 +80,7 @@ class Ghost {
     draw() {
         ctx.beginPath()
         ctx.arc(this.position.x, this.position.y, this.radius, 0, Math.PI * 2)
-        ctx.fillStyle = this.scared ? 'blue' : this.color       //turynery??? if scared is true, fillstyle sholud be blue else fillstyle sholud be this.color
+        ctx.fillStyle = this.scared ? 'blue' : this.color       //turnary operator// if scared is true, fillstyle sholud be blue else fillstyle sholud be this.color
         ctx.fill()
         ctx.closePath()
     }
